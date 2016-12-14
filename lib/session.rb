@@ -24,7 +24,6 @@ class Session
   # add to the responses cookies
   def store_session(res)
     json_cookie = JSON.generate(@cookie)
-    puts json_cookie
     res.set_cookie('_rails_lite_app', json_cookie)
   end
 end
